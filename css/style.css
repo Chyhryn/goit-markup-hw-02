@@ -59,7 +59,7 @@ body {
 
 /* Links */
 .link {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -92,11 +92,10 @@ body {
 }
 
 /* Buttons */
-
 .btn {
-  font-family: var(--main-font);
+  font-family: inherit;
+  cursor: pointer;
 }
-
 .hero-btn {
   font-weight: 700;
   font-size: 16px;
@@ -108,8 +107,25 @@ body {
 
   color: var(--secondary-accent-color);
   background-color: var(--accent-color);
+}
 
-  cursor: pointer;
+.works-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-color);
+  background-color: var(--secondary-bg-color);
+}
+
+.works-btn:hover,
+.works-btn:focus,
+.current-btn {
+  color: var(--secondary-accent-color);
+  background-color: var(--accent-color);
 }
 
 /* Headings */
@@ -127,24 +143,18 @@ body {
 
 .benefits-title,
 .services-title,
-.team-title {
+.team-title,
+.works-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--secondary-color);
 }
 
 .item-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  color: var(--secondary-color);
 }
 
 .member-title {
@@ -152,8 +162,22 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
+}
 
+.work-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.benefits-title,
+.services-title,
+.team-title,
+.works-title,
+.item-title,
+.member-title,
+.work-title {
   color: var(--secondary-color);
 }
 
@@ -177,6 +201,11 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.work-text {
+  font-size: 16px;
+  line-height: 1.88;
 }
 
 .address-text {
