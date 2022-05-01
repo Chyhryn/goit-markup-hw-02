@@ -82,6 +82,12 @@ body {
   color: var(--accent-color);
 }
 
+.work-link {
+  font-family: inherit;
+  text-decoration: none;
+  color: currentColor;
+}
+
 .address-link {
   font-weight: 400;
   font-size: 14px;
@@ -107,6 +113,11 @@ body {
 
   color: var(--secondary-accent-color);
   background-color: var(--accent-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
 }
 
 .works-btn {
@@ -153,6 +164,7 @@ body {
 
 .item-title {
   font-weight: 700;
+  font-size: inherit;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -208,7 +220,8 @@ body {
   line-height: 1.88;
 }
 
-.address-text {
+.address {
+  font-style: normal;
   color: var(--secondary-accent-color);
 }
 
